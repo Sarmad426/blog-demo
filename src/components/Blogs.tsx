@@ -29,7 +29,9 @@ const Blogs = ({
   const router = useRouter();
   return (
     <div className="bg-white w-[22rem] px-6 py-3 m-12 text-start rounded-md shadow-md shadow-gray-500 hover:shadow-sm cursor-pointer">
-      <h2 className="text-1xl font-semibold text-center">{title}</h2>
+      <h2 className="text-1xl font-semibold text-center border-b-2 border-gray-400 mb-4">
+        {title}
+      </h2>
       <p>{content}</p>
       <div className="flex justify-between">
         <div className="flex">
