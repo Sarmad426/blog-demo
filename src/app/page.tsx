@@ -4,6 +4,9 @@ import Blogs from "@/components/Blogs";
 const getBlogs = async () => {
   return await prisma.blog.findMany();
 };
+
+export const revalidate = 0;
+
 export default async function Home() {
   const blogs = await getBlogs();
   const handleLike = async (id: string) => {
