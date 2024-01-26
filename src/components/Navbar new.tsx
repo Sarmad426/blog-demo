@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 const Navbar = () => {
   return (
@@ -9,12 +10,12 @@ const Navbar = () => {
         >
           Blogify
         </Link>
-        <Link
-          href="/"
+        <button
+          onClick={() => window.location.assign("/")}
           className="bg-orange-500 text-white px-5 py-3 rounded-md hover:bg-orange-600 font-medium tracking-wide"
         >
           View Blogs
-        </Link>
+        </button>
       </div>
     </nav>
   );
